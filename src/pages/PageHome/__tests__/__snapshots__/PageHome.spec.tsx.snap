@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PageHome should render correctly 1`] = `
+<Fragment>
+  <SearchRepositories />
+  <RepositoriesList />
+  <Pagination />
+</Fragment>
+`;

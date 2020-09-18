@@ -1,0 +1,66 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SearchRepositories should render correctly 1`] = `
+<BrowserRouter>
+  <Router
+    history={
+      Object {
+        "action": "POP",
+        "block": [Function],
+        "createHref": [Function],
+        "go": [Function],
+        "goBack": [Function],
+        "goForward": [Function],
+        "length": 1,
+        "listen": [Function],
+        "location": Object {
+          "hash": "",
+          "pathname": "/",
+          "search": "",
+          "state": undefined,
+        },
+        "push": [Function],
+        "replace": [Function],
+      }
+    }
+  >
+    <Provider
+      store={
+        Object {
+          "clearActions": [Function],
+          "dispatch": [Function],
+          "getActions": [Function],
+          "getState": [Function],
+          "replaceReducer": [Function],
+          "subscribe": [Function],
+        }
+      }
+    >
+      <SearchRepositories>
+        <form
+          className="search"
+          onSubmit={[Function]}
+        >
+          <input
+            className="search__term"
+            name="search-repo-input"
+            onChange={[Function]}
+            placeholder="Input the name of the repository"
+            type="text"
+            value=""
+          />
+          <button
+            className="search__button"
+            name="submit-button"
+            type="submit"
+          >
+            <i
+              className="fa fa-search"
+            />
+          </button>
+        </form>
+      </SearchRepositories>
+    </Provider>
+  </Router>
+</BrowserRouter>
+`;

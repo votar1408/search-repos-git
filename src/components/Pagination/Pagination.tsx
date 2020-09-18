@@ -37,6 +37,7 @@ export const Pagination: FC = () => {
                     type="submit"
                     className="pagination__button"
                     disabled={page === common.getDefaultPage || loading}
+                    data-id="left-button"
                     onClick={() => onChangePageHandler(-1)}
                 >
                     <i className="fa fa-angle-left"></i>
@@ -45,6 +46,7 @@ export const Pagination: FC = () => {
                     type="submit"
                     className="pagination__button"
                     disabled={!listForPage?.length || loading}
+                    data-id="right-button"
                     onClick={() => onChangePageHandler(1)}
                 >
                     <i className="fa fa-angle-right"></i>

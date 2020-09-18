@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Spinner should render correctly 1`] = `
+<div
+  className="root"
+>
+  <div
+    className="root__spinner"
+  >
+    <img
+      alt="spinner"
+      className="spinner-img"
+      src="spinner.svg"
+    />
+  </div>
+</div>
+`;

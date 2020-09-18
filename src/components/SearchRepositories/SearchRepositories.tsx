@@ -86,12 +86,13 @@ export const SearchRepositories: FC = () => {
         <form className="search" onSubmit={onSearchRepositoriesHandler}>
             <input
                 type="text"
+                name="search-repo-input"
                 className="search__term"
                 placeholder={texts.inputRepositoryName}
                 value={searchValueState}
                 onChange={onChangeSearchValueHandler}
             />
-            <button type="submit" className="search__button">
+            <button type="submit" name="submit-button" className="search__button">
                 <i className="fa fa-search"></i>
             </button>
         </form>

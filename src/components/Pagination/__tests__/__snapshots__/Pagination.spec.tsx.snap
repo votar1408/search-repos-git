@@ -1,0 +1,70 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pagination should render correctly 1`] = `
+<BrowserRouter>
+  <Router
+    history={
+      Object {
+        "action": "POP",
+        "block": [Function],
+        "createHref": [Function],
+        "go": [Function],
+        "goBack": [Function],
+        "goForward": [Function],
+        "length": 1,
+        "listen": [Function],
+        "location": Object {
+          "hash": "",
+          "pathname": "/",
+          "search": "",
+          "state": undefined,
+        },
+        "push": [Function],
+        "replace": [Function],
+      }
+    }
+  >
+    <Provider
+      store={
+        Object {
+          "clearActions": [Function],
+          "dispatch": [Function],
+          "getActions": [Function],
+          "getState": [Function],
+          "replaceReducer": [Function],
+          "subscribe": [Function],
+        }
+      }
+    >
+      <Pagination>
+        <div
+          className="pagination"
+        >
+          <button
+            className="pagination__button"
+            data-id="left-button"
+            disabled={true}
+            onClick={[Function]}
+            type="submit"
+          >
+            <i
+              className="fa fa-angle-left"
+            />
+          </button>
+          <button
+            className="pagination__button"
+            data-id="right-button"
+            disabled={false}
+            onClick={[Function]}
+            type="submit"
+          >
+            <i
+              className="fa fa-angle-right"
+            />
+          </button>
+        </div>
+      </Pagination>
+    </Provider>
+  </Router>
+</BrowserRouter>
+`;
