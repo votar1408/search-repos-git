@@ -1,4 +1,5 @@
+import * as common from './common';
 import {navigation} from './navigation';
 import {texts} from './texts';
 
-export {navigation, texts};
+export {common, navigation, texts};

@@ -1,5 +1,5 @@
-export type HttpMethod = 'GET' | 'POST' | 'PUT' | 'DELETE';
-export type ResponseType = 'json' | 'blob' | 'none';
+export type HttpMethod = 'GET';
+export type ResponseType = 'json' | 'none';
 
 export interface OtherParamsHttpData {
     typeRequest?: ResponseType;

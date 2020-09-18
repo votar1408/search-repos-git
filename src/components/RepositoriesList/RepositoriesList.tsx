@@ -8,13 +8,14 @@ import React, {
 
 import {useSelector} from 'react-redux';
 
+import {texts} from '../../consts/texts';
 import {RepositoryServerInfo} from '../../interfaces/ServerData';
 import {selectApp} from '../../redux/types';
 import {Repository} from './Repository';
 
 export const RepositoriesList: FC = () => {
-    const {repositories} = useSelector(selectApp);
-    const listForPage: RepositoryServerInfo[] = repositories[1];
+    const {repositories, page, loading} = useSelector(selectApp);
+    const listForPage: RepositoryServerInfo[] = !repositories[page] ? repositories[page - 1] : repositories[page];
 
     const listItems: ReactElement | null = useMemo(() => {
         return listForPage?.length > 0 ? (
@@ -23,8 +24,10 @@ export const RepositoriesList: FC = () => {
                     return <Repository key={item.id} item={item} />;
                 })}
             </ul>
-        ) : null;
-    }, [listForPage]);
+        ) : loading ? null : (
+            <div className="empty-repositories">{texts.emptyList}</div>
+        );
+    }, [listForPage, loading]);
 
     return <>{listItems}</>;
 };

@@ -10,5 +10,7 @@ export const texts = {
 
     name: 'Name:',
     description: 'Description:',
-    owner: 'Owner:'
+    owner: 'Owner:',
+
+    emptyList: 'Empty repositories list'
 };
