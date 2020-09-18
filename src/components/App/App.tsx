@@ -9,6 +9,7 @@ import React, {
 
 import {useSelector} from 'react-redux';
 
+import {RoutePage} from '../../pages/RoutePage';
 import {selectApp} from '../../redux/types';
 import {Header} from '../Header';
 import {Spinner} from '../Spinner';
@@ -22,7 +23,7 @@ export const App: FC = () => {
         <>
             <Header />
             <main className="main-container">
-                Hello
+                <RoutePage />
                 {spinner}
             </main>
         </>

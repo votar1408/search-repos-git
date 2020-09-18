@@ -1,0 +1,186 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RepositoriesList should render correctly 1`] = `
+<BrowserRouter>
+  <Router
+    history={
+      Object {
+        "action": "POP",
+        "block": [Function],
+        "createHref": [Function],
+        "go": [Function],
+        "goBack": [Function],
+        "goForward": [Function],
+        "length": 1,
+        "listen": [Function],
+        "location": Object {
+          "hash": "",
+          "pathname": "/",
+          "search": "",
+          "state": undefined,
+        },
+        "push": [Function],
+        "replace": [Function],
+      }
+    }
+  >
+    <Provider
+      store={
+        Object {
+          "clearActions": [Function],
+          "dispatch": [Function],
+          "getActions": [Function],
+          "getState": [Function],
+          "replaceReducer": [Function],
+          "subscribe": [Function],
+        }
+      }
+    >
+      <RepositoriesList>
+        <ul
+          className="repositories-container"
+        >
+          <Repository
+            item={
+              Object {
+                "description": "some description 1",
+                "id": 1,
+                "name": "test1",
+                "owner": Object {
+                  "avatar_url": "some url1",
+                  "login": "login1",
+                },
+              }
+            }
+            key="1"
+          >
+            <li
+              className="repository"
+            >
+              <div
+                className="repository__block"
+                data-id="repository-block"
+              >
+                <span
+                  className="repository__block_title"
+                >
+                  Name:
+                </span>
+                <span
+                  className="repository__block_description"
+                >
+                  test1
+                </span>
+              </div>
+              <div
+                className="repository__block"
+                data-id="repository-block"
+              >
+                <span
+                  className="repository__block_title"
+                >
+                  Description:
+                </span>
+                <span
+                  className="repository__block_description"
+                >
+                  some description 1
+                </span>
+              </div>
+              <div
+                className="repository__block"
+                data-id="repository-block"
+              >
+                <span
+                  className="repository__block_title"
+                >
+                  Owner:
+                </span>
+                <img
+                  alt="logo"
+                  className="repository__block_logo"
+                  src="some url1"
+                />
+                <span
+                  className="repository__block_description"
+                >
+                  login1
+                </span>
+              </div>
+            </li>
+          </Repository>
+          <Repository
+            item={
+              Object {
+                "description": "some description 2",
+                "id": 2,
+                "name": "test2",
+                "owner": Object {
+                  "avatar_url": "some url2",
+                  "login": "login2",
+                },
+              }
+            }
+            key="2"
+          >
+            <li
+              className="repository"
+            >
+              <div
+                className="repository__block"
+                data-id="repository-block"
+              >
+                <span
+                  className="repository__block_title"
+                >
+                  Name:
+                </span>
+                <span
+                  className="repository__block_description"
+                >
+                  test2
+                </span>
+              </div>
+              <div
+                className="repository__block"
+                data-id="repository-block"
+              >
+                <span
+                  className="repository__block_title"
+                >
+                  Description:
+                </span>
+                <span
+                  className="repository__block_description"
+                >
+                  some description 2
+                </span>
+              </div>
+              <div
+                className="repository__block"
+                data-id="repository-block"
+              >
+                <span
+                  className="repository__block_title"
+                >
+                  Owner:
+                </span>
+                <img
+                  alt="logo"
+                  className="repository__block_logo"
+                  src="some url2"
+                />
+                <span
+                  className="repository__block_description"
+                >
+                  login2
+                </span>
+              </div>
+            </li>
+          </Repository>
+        </ul>
+      </RepositoriesList>
+    </Provider>
+  </Router>
+</BrowserRouter>
+`;

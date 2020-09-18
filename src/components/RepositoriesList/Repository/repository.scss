@@ -1,0 +1,36 @@
+@import '../../../assets/scss/variable.scss';
+
+.repository {
+    display: flex;
+    padding: 10px;
+    border-bottom: 1px solid $color-grey;
+}
+
+.repository__block {
+    display: flex;
+    align-items: center;
+}
+
+.repository__block_title {
+    font-weight: bold;
+    margin-right: 6px;
+    font-size: 18px;
+}
+
+.repository__block_description {
+    min-width: 200px;
+    max-width: 200px;
+    margin-right: 6px;
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: 16px;
+    text-overflow: ellipsis;
+}
+
+.repository__block_logo {
+    width: 34px;
+    height: 34px;
+    border-radius: 34px;
+    margin-right: 6px;
+    background-color: white;
+}

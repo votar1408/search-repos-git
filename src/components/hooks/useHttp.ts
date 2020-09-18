@@ -9,22 +9,10 @@ import {useDispatch} from 'react-redux';
 import {texts} from '../../consts';
 import {
     HttpData,
-    HttpFunc,
-    ResponseType
+    HttpFunc
 } from '../../interfaces/ServerData';
 import {loadingAction} from '../../redux/app/actions';
 import {useMountedRef} from './useMountedRef';
-
-const parseDataType = async (response: Response, type: ResponseType) => {
-    switch (type) {
-        case 'blob':
-            return await response.blob();
-        case 'json':
-            return await response.json();
-        default:
-            return response;
-    }
-};
 
 export const useHttp: HttpFunc = (): HttpData => {
     const [loading, setLoading] = useState<boolean>(false);
@@ -56,7 +44,7 @@ export const useHttp: HttpFunc = (): HttpData => {
                     headers,
                     signal
                 });
-                const data = await parseDataType(response, otherParams.typeResponse);
+                const data = await await response.json();
 
                 if (!response.ok) {
                     throw new Error(data?.error?.message || texts.errorMessage);

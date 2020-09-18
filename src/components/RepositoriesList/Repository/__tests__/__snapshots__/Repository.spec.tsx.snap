@@ -1,0 +1,58 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Repository should render correctly 1`] = `
+<li
+  className="repository"
+>
+  <div
+    className="repository__block"
+    data-id="repository-block"
+  >
+    <span
+      className="repository__block_title"
+    >
+      Name:
+    </span>
+    <span
+      className="repository__block_description"
+    >
+      some name
+    </span>
+  </div>
+  <div
+    className="repository__block"
+    data-id="repository-block"
+  >
+    <span
+      className="repository__block_title"
+    >
+      Description:
+    </span>
+    <span
+      className="repository__block_description"
+    >
+      some description
+    </span>
+  </div>
+  <div
+    className="repository__block"
+    data-id="repository-block"
+  >
+    <span
+      className="repository__block_title"
+    >
+      Owner:
+    </span>
+    <img
+      alt="logo"
+      className="repository__block_logo"
+      src="some url"
+    />
+    <span
+      className="repository__block_description"
+    >
+      some id
+    </span>
+  </div>
+</li>
+`;

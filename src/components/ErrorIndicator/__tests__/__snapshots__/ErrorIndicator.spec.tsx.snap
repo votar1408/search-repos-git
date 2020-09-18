@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ErrorIndicator should render correctly 1`] = `
+<div
+  className="error-indicator"
+>
+  <span>
+    OOOPS...
+  </span>
+  <span>
+    something has gone wrong
+  </span>
+  <span>
+    (but we already fixing it)
+  </span>
+</div>
+`;
