@@ -6,5 +6,9 @@ export const texts = {
     errorIndicator2: 'something has gone wrong',
     errorIndicator3: '(but we already fixing it)',
 
-    inputRepositoryName: 'Input the name of the repository'
+    inputRepositoryName: 'Input the name of the repository',
+
+    name: 'Name:',
+    description: 'Description:',
+    owner: 'Owner:'
 };

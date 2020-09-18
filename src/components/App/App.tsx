@@ -11,6 +11,7 @@ import {useSelector} from 'react-redux';
 
 import {selectApp} from '../../redux/types';
 import {Header} from '../Header';
+import {RepositoriesList} from '../RepositoriesList';
 import {SearchRepositories} from '../SearchRepositories';
 import {Spinner} from '../Spinner';
 
@@ -24,6 +25,7 @@ export const App: FC = () => {
             <Header />
             <main className="main-container">
                 <SearchRepositories />
+                <RepositoriesList />
                 {spinner}
             </main>
         </>

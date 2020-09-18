@@ -1,0 +1,17 @@
+@import '../../assets/scss/variable.scss';
+
+.repositories-container {
+    max-width: 1000px;
+    max-height: calc(100vh - 230px);
+    overflow: hidden;
+    overflow-y: auto;
+    border: 1px solid $color-grey;
+    border-radius: 5px;
+    li:nth-child(even) {
+        background-color: lighten($color: $color-main, $amount: 10);
+        color: white;
+    }
+    li:last-child {
+        border-bottom: none;
+    }
+}
