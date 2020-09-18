@@ -1,0 +1,9 @@
+{
+    "extends": ["react-app", "prettier"],
+    "rules": {
+        "no-console": "error",
+        "no-debugger": "error",
+        "react-hooks/exhaustive-deps": "warn"
+    },
+    "plugins": ["prettier"]
+}
